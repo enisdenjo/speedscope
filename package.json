@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "speedscope",
-  "version": "1.23.0-alpha.2",
+  "version": "1.23.0-alpha.3",
   "description": "",
   "repository": "jlfwong/speedscope",
   "main": "./dist/lib/src/import/index.js",
@@ -10,7 +10,11 @@
   },
   "exports": {
     "./package.json": "./package.json",
-    "./import/v8heapalloc": {
+    "./profile": {
+      "types": "./dist/lib/src/lib/profile.d.ts",
+      "default": "./dist/lib/src/lib/profile.js"
+    },
+    "./profile/v8heapalloc": {
       "types": "./dist/lib/src/import/v8heapalloc.d.ts",
       "default": "./dist/lib/src/import/v8heapalloc.js"
     }
