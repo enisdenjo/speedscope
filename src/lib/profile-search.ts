@@ -1,6 +1,6 @@
-import {Profile, Frame, CallTreeNode} from './profile'
-import {Flamechart, FlamechartFrame} from './flamechart'
-import {Rect, Vec2} from './math'
+import {Profile, Frame, CallTreeNode} from './profile.js'
+import {Flamechart, FlamechartFrame} from './flamechart.js'
+import {Rect, Vec2} from './math.js'
 
 export enum FlamechartType {
   CHRONO_FLAME_CHART,

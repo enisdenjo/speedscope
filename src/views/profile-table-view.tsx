@@ -1,16 +1,16 @@
 import {h, JSX, ComponentChild} from 'preact'
 import {StyleSheet, css} from 'aphrodite'
-import {Profile, Frame} from '../lib/profile'
-import {formatPercent} from '../lib/utils'
-import {FontSize, Sizes, commonStyle} from './style'
-import {ColorChit} from './color-chit'
-import {ListItem, ScrollableListView} from './scrollable-list-view'
-import {createGetCSSColorForFrame, getFrameToColorBucket} from '../app-state/getters'
+import {Profile, Frame} from '../lib/profile.js'
+import {formatPercent} from '../lib/utils.js'
+import {FontSize, Sizes, commonStyle} from './style.js'
+import {ColorChit} from './color-chit.js'
+import {ListItem, ScrollableListView} from './scrollable-list-view.js'
+import {createGetCSSColorForFrame, getFrameToColorBucket} from '../app-state/getters.js'
 import {memo} from 'preact/compat'
 import {useCallback, useMemo, useContext} from 'preact/hooks'
-import {SandwichViewContext} from './sandwich-view'
-import {Color} from '../lib/color'
-import {useTheme, withTheme} from './themes/theme'
+import {SandwichViewContext} from './sandwich-view.js'
+import {Color} from '../lib/color.js'
+import {useTheme, withTheme} from './themes/theme.js'
 import {
   SortDirection,
   SortMethod,
@@ -19,9 +19,9 @@ import {
   tableSortMethodAtom,
   searchIsActiveAtom,
   searchQueryAtom,
-} from '../app-state'
-import {useAtom} from '../lib/atom'
-import {ActiveProfileState} from '../app-state/active-profile-state'
+} from '../app-state/index.js'
+import {useAtom} from '../lib/atom.js'
+import {ActiveProfileState} from '../app-state/active-profile-state.js'
 
 interface HBarProps {
   perc: number

@@ -1,8 +1,8 @@
-import {Profile} from '../lib/profile'
-import {getProfileToView} from './getters'
-import {flattenRecursionAtom, profileGroupAtom} from '.'
-import {FlamechartViewState, SandwichViewState} from './profile-group'
-import {useAtom} from '../lib/atom'
+import {Profile} from '../lib/profile.js'
+import {getProfileToView} from './getters.js'
+import {flattenRecursionAtom, profileGroupAtom} from './index.js'
+import {FlamechartViewState, SandwichViewState} from './profile-group.js'
+import {useAtom} from '../lib/atom.js'
 
 export interface ApplicationState {}
 

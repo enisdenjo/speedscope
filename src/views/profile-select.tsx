@@ -1,11 +1,11 @@
-import {Profile} from '../lib/profile'
+import {Profile} from '../lib/profile.js'
 import {h, JSX, ComponentChild, Ref} from 'preact'
 import {useCallback, useState, useMemo, useEffect, useRef} from 'preact/hooks'
 import {StyleSheet, css} from 'aphrodite'
-import {ZIndex, Sizes} from './style'
-import {fuzzyMatchStrings} from '../lib/fuzzy-find'
-import {sortBy} from '../lib/utils'
-import {useTheme, withTheme} from './themes/theme'
+import {ZIndex, Sizes} from './style.js'
+import {fuzzyMatchStrings} from '../lib/fuzzy-find.js'
+import {sortBy} from '../lib/utils.js'
+import {useTheme, withTheme} from './themes/theme.js'
 
 interface ProfileSelectRowProps {
   setProfileIndexToView: (profileIndex: number) => void

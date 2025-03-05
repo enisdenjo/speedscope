@@ -1,6 +1,6 @@
 import {readFileSync} from 'fs'
-import {importProfileGroupFromText} from '.'
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {importProfileGroupFromText} from './index.js'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importFromStackprof', async () => {
   await checkProfileSnapshot('./sample/profiles/stackprof/simple-stackprof.json')

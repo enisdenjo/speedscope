@@ -1,8 +1,8 @@
-import {Color} from '../lib/color'
-import {AffineTransform, Rect} from '../lib/math'
-import {Theme} from '../views/themes/theme'
-import {Graphics} from './graphics'
-import {setUniformAffineTransform, setUniformVec2} from './utils'
+import {Color} from '../lib/color.js'
+import {AffineTransform, Rect} from '../lib/math.js'
+import {Theme} from '../views/themes/theme.js'
+import {Graphics} from './graphics.js'
+import {setUniformAffineTransform, setUniformVec2} from './utils.js'
 
 export interface ViewportRectangleRendererProps {
   configSpaceToPhysicalViewSpace: AffineTransform

@@ -1,7 +1,7 @@
-import {Frame, CallTreeNode} from './profile'
+import {Frame, CallTreeNode} from './profile.js'
 
-import {lastOf} from './utils'
-import {clamp, Rect, Vec2} from './math'
+import {lastOf} from './utils.js'
+import {clamp, Rect, Vec2} from './math.js'
 
 export interface FlamechartFrame {
   node: CallTreeNode

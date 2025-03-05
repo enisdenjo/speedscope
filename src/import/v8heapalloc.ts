@@ -1,6 +1,6 @@
-import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile'
-import {getOrInsert} from '../lib/utils'
-import {ByteFormatter} from '../lib/value-formatters'
+import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile.js'
+import {getOrInsert} from '../lib/utils.js'
+import {ByteFormatter} from '../lib/value-formatters.js'
 
 /**
  * The V8 Heap Allocation profile is a way to represent heap allocation for each

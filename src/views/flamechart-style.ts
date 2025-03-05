@@ -1,6 +1,6 @@
 import {StyleSheet} from 'aphrodite'
-import {FontSize, Sizes} from './style'
-import {withTheme} from './themes/theme'
+import {FontSize, Sizes} from './style.js'
+import {withTheme} from './themes/theme.js'
 
 export const getFlamechartStyle = withTheme(theme =>
   StyleSheet.create({

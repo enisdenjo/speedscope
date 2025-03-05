@@ -1,10 +1,10 @@
-import {LRUCache} from '../lib/lru-cache'
-import {RectangleBatch, RectangleBatchRenderer} from './rectangle-batch-renderer'
-import {Rect, Vec2} from '../lib/math'
-import {Color} from '../lib/color'
-import {Graphics} from './graphics'
-import {TextureRenderer} from './texture-renderer'
-import {renderInto} from './utils'
+import {LRUCache} from '../lib/lru-cache.js'
+import {RectangleBatch, RectangleBatchRenderer} from './rectangle-batch-renderer.js'
+import {Rect, Vec2} from '../lib/math.js'
+import {Color} from '../lib/color.js'
+import {Graphics} from './graphics.js'
+import {TextureRenderer} from './texture-renderer.js'
+import {renderInto} from './utils.js'
 
 export class RowAtlas<K> {
   private texture: Graphics.Texture

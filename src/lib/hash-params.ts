@@ -1,4 +1,4 @@
-import {ViewMode} from '../lib/view-mode'
+import {ViewMode} from '../lib/view-mode.js'
 
 export interface HashParams {
   profileURL?: string

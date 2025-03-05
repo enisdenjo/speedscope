@@ -1,7 +1,7 @@
-import {Atom} from '../lib/atom'
-import {ViewMode} from '../lib/view-mode'
-import {getHashParams, HashParams} from '../lib/hash-params'
-import {ProfileGroupAtom} from './profile-group'
+import {Atom} from '../lib/atom.js'
+import {ViewMode} from '../lib/view-mode.js'
+import {getHashParams, HashParams} from '../lib/hash-params.js'
+import {ProfileGroupAtom} from './profile-group.js'
 
 // True if recursion should be flattened when viewing flamegraphs
 export const flattenRecursionAtom = new Atom<boolean>(false, 'flattenRecursion')

@@ -1,11 +1,11 @@
 import {StyleDeclarationValue, css} from 'aphrodite'
 import {h, JSX} from 'preact'
-import {getFlamechartStyle} from './flamechart-style'
-import {formatPercent} from '../lib/utils'
-import {Frame, CallTreeNode} from '../lib/profile'
-import {ColorChit} from './color-chit'
-import {Flamechart} from '../lib/flamechart'
-import {useTheme} from './themes/theme'
+import {getFlamechartStyle} from './flamechart-style.js'
+import {formatPercent} from '../lib/utils.js'
+import {Frame, CallTreeNode} from '../lib/profile.js'
+import {ColorChit} from './color-chit.js'
+import {Flamechart} from '../lib/flamechart.js'
+import {useTheme} from './themes/theme.js'
 
 interface StatisticsTableProps {
   title: string

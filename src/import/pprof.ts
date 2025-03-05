@@ -1,8 +1,8 @@
 // @ts-expect-error
 import {perftools} from './profile.proto.cjs'
-import {FrameInfo, StackListProfileBuilder, Profile} from '../lib/profile'
-import {lastOf} from '../lib/utils'
-import {TimeFormatter, ByteFormatter} from '../lib/value-formatters'
+import {FrameInfo, StackListProfileBuilder, Profile} from '../lib/profile.js'
+import {lastOf} from '../lib/utils.js'
+import {TimeFormatter, ByteFormatter} from '../lib/value-formatters.js'
 import Long from 'long'
 
 interface SampleType {

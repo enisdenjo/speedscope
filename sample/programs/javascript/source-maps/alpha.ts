@@ -1,5 +1,5 @@
-import {beta} from './beta'
-import {delta} from './delta'
+import {beta} from './beta.js'
+import {delta} from './delta.js'
 
 export function alpha() {
   ;(function () {

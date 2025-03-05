@@ -15,7 +15,7 @@ import {
   objectsHaveShallowEquality,
   decodeBase64,
   findIndexBisect,
-} from './utils'
+} from './utils.js'
 
 import {TextEncoder} from 'util'
 
@@ -24,7 +24,7 @@ import {
   BufferBackedTextFileContent,
   StringBackedTextFileContent,
   withMockedFileChunkSizeForTests,
-} from '../import/utils'
+} from '../import/utils.js'
 
 test('sortBy', () => {
   const ls = ['a3', 'b2', 'c1', 'd4']

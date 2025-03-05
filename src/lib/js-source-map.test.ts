@@ -1,8 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import {importProfilesFromArrayBuffer} from '../import'
-import {importJavaScriptSourceMapSymbolRemapper} from './js-source-map'
-import {Frame} from './profile'
+import {importProfilesFromArrayBuffer} from '../import/index.js'
+import {importJavaScriptSourceMapSymbolRemapper} from './js-source-map.js'
+import {Frame} from './profile.js'
 
 async function checkSourceMapApplication(pathToProfile: string, pathToSourceMap: string) {
   const buffer = fs.readFileSync(pathToProfile)

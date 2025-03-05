@@ -1,5 +1,5 @@
-import {fuzzyMatchStrings} from './fuzzy-find'
-import {sortBy} from './utils'
+import {fuzzyMatchStrings} from './fuzzy-find.js'
+import {sortBy} from './utils.js'
 
 function assertMatches(texts: string[], pattern: string, expectedResults: string[]) {
   const results: {score: number; highlighted: string}[] = []

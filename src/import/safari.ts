@@ -1,5 +1,5 @@
-import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile'
-import {TimeFormatter} from '../lib/value-formatters'
+import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
 
 interface Record {
   type: string

@@ -1,9 +1,9 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import {dumpProfile, checkProfileSnapshot} from '../lib/test-utils'
+import {dumpProfile, checkProfileSnapshot} from '../lib/test-utils.js'
 
 import * as JSZip from 'jszip'
-import {importFromFileSystemDirectoryEntry} from '.'
+import {importFromFileSystemDirectoryEntry} from './index.js'
 
 describe('importFromInstrumentsDeepCopy', () => {
   test('time profile', async () => {

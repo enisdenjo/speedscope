@@ -1,7 +1,7 @@
 // https://github.com/tmm1/stackprof
 
-import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile'
-import {RawValueFormatter, TimeFormatter} from '../lib/value-formatters'
+import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile.js'
+import {RawValueFormatter, TimeFormatter} from '../lib/value-formatters.js'
 
 interface StackprofFrame {
   name?: string

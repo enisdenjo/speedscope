@@ -6,9 +6,9 @@ import {
   FrameInfo,
   StackListProfileBuilder,
   ProfileGroup,
-} from './profile'
-import {TimeFormatter, ByteFormatter, RawValueFormatter} from './value-formatters'
-import {FileFormat} from './file-format-spec'
+} from './profile.js'
+import {TimeFormatter, ByteFormatter, RawValueFormatter} from './value-formatters.js'
+import {FileFormat} from './file-format-spec.js'
 
 export function exportProfileGroup(profileGroup: ProfileGroup): FileFormat.File {
   const frames: FileFormat.Frame[] = []

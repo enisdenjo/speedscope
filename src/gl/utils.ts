@@ -1,5 +1,5 @@
-import {Graphics} from './graphics'
-import {AffineTransform, Vec2} from '../lib/math'
+import {Graphics} from './graphics.js'
+import {AffineTransform, Vec2} from '../lib/math.js'
 
 export function setUniformAffineTransform(
   material: Graphics.Material,

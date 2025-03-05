@@ -1,6 +1,6 @@
-import {Profile, FrameInfo, CallTreeProfileBuilder} from '../lib/profile'
-import {getOrInsert} from '../lib/utils'
-import {TimeFormatter} from '../lib/value-formatters'
+import {Profile, FrameInfo, CallTreeProfileBuilder} from '../lib/profile.js'
+import {getOrInsert} from '../lib/utils.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
 
 interface Allocations {
   frames: any[]

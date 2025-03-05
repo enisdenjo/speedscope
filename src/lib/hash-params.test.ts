@@ -1,4 +1,4 @@
-import {getHashParams} from './hash-params'
+import {getHashParams} from './hash-params.js'
 
 test('getHashParams', () => {
   expect(getHashParams('')).toEqual({})

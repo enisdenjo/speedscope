@@ -1,5 +1,5 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
-import {withMockedFileChunkSizeForTests} from './utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
+import {withMockedFileChunkSizeForTests} from './utils.js'
 
 describe('importFromLinuxPerf', () => {
   test('simple.linux-perf.txt', async () => {

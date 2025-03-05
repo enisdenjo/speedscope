@@ -1,5 +1,5 @@
-import {FileFormat} from './file-format-spec'
-import {zeroPad} from './utils'
+import {FileFormat} from './file-format-spec.js'
+import {zeroPad} from './utils.js'
 
 export interface ValueFormatter {
   unit: FileFormat.ValueUnit

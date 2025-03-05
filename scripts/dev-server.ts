@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild'
-import {buildOptions, generateIndexHtml} from './esbuild-shared'
+import {buildOptions, generateIndexHtml} from './esbuild-shared.js'
 
 async function main() {
   const outdir = 'dist'

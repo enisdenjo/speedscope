@@ -1,14 +1,14 @@
 import {h, Component} from 'preact'
 import {css} from 'aphrodite'
-import {Flamechart} from '../lib/flamechart'
-import {Rect, Vec2, AffineTransform, clamp} from '../lib/math'
-import {FlamechartRenderer} from '../gl/flamechart-renderer'
-import {getFlamechartStyle} from './flamechart-style'
-import {FontFamily, FontSize, Sizes, commonStyle} from './style'
-import {CanvasContext} from '../gl/canvas-context'
-import {cachedMeasureTextWidth} from '../lib/text-utils'
-import {Color} from '../lib/color'
-import {Theme} from './themes/theme'
+import {Flamechart} from '../lib/flamechart.js'
+import {Rect, Vec2, AffineTransform, clamp} from '../lib/math.js'
+import {FlamechartRenderer} from '../gl/flamechart-renderer.js'
+import {getFlamechartStyle} from './flamechart-style.js'
+import {FontFamily, FontSize, Sizes, commonStyle} from './style.js'
+import {CanvasContext} from '../gl/canvas-context.js'
+import {cachedMeasureTextWidth} from '../lib/text-utils.js'
+import {Color} from '../lib/color.js'
+import {Theme} from './themes/theme.js'
 
 interface FlamechartMinimapViewProps {
   theme: Theme

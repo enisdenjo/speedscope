@@ -1,4 +1,4 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importFromBGFlameGraph', async () => {
   await checkProfileSnapshot('./sample/profiles/stackcollapse/simple.txt')

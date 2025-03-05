@@ -1,5 +1,5 @@
 import * as jsc from 'jsverify'
-import {LRUCache} from './lru-cache'
+import {LRUCache} from './lru-cache.js'
 
 class SlowLRUCache<K, V> {
   private list: {k: K; v: V}[] = []

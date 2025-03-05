@@ -1,11 +1,11 @@
 import {h, ComponentChildren, createContext} from 'preact'
 import {useCallback, useContext, useEffect, useState} from 'preact/hooks'
-import {ColorScheme, colorSchemeAtom} from '../../app-state/color-scheme'
-import {useAtom} from '../../lib/atom'
-import {Color} from '../../lib/color'
-import {memoizeByReference} from '../../lib/utils'
-import {darkTheme} from './dark-theme'
-import {lightTheme} from './light-theme'
+import {ColorScheme, colorSchemeAtom} from '../../app-state/color-scheme.js'
+import {useAtom} from '../../lib/atom.js'
+import {Color} from '../../lib/color.js'
+import {memoizeByReference} from '../../lib/utils.js'
+import {darkTheme} from './dark-theme.js'
+import {lightTheme} from './light-theme.js'
 
 export interface Theme {
   fgPrimaryColor: string

@@ -1,7 +1,7 @@
 import {h} from 'preact'
 import {StyleSheet, css} from 'aphrodite'
-import {FontSize} from './style'
-import {useTheme, withTheme} from './themes/theme'
+import {FontSize} from './style.js'
+import {useTheme, withTheme} from './themes/theme.js'
 
 interface ColorChitProps {
   color: string

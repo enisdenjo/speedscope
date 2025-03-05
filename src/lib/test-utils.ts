@@ -1,8 +1,8 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import {Profile, CallTreeNode, Frame} from './profile'
-import {exportProfileGroup, importSpeedscopeProfiles} from './file-format'
-import {importProfilesFromArrayBuffer} from '../import'
+import {Profile, CallTreeNode, Frame} from './profile.js'
+import {exportProfileGroup, importSpeedscopeProfiles} from './file-format.js'
+import {importProfilesFromArrayBuffer} from '../import/index.js'
 
 interface DumpedProfile {
   name: string

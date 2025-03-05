@@ -1,6 +1,6 @@
 import {h, render} from 'preact'
-import {ApplicationContainer} from './views/application-container'
-import {ThemeProvider} from './views/themes/theme'
+import {ApplicationContainer} from './views/application-container.js'
+import {ThemeProvider} from './views/themes/theme.js'
 
 console.log(`speedscope v${require('../package.json').version}`)
 

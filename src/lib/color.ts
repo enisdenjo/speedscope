@@ -1,4 +1,4 @@
-import {clamp} from './math'
+import {clamp} from './math.js'
 
 export class Color {
   constructor(

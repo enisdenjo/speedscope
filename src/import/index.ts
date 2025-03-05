@@ -1,4 +1,4 @@
-import {Profile, ProfileGroup} from '../lib/profile'
+import {Profile, ProfileGroup} from '../lib/profile.js'
 
 import {
   importFromChromeCPUProfile,
@@ -6,23 +6,23 @@ import {
   isChromeTimeline,
   importFromOldV8CPUProfile,
   isChromeTimelineObject,
-} from './chrome'
-import {importFromStackprof} from './stackprof'
-import {importFromInstrumentsDeepCopy, importFromInstrumentsTrace} from './instruments'
-import {importFromBGFlameGraph} from './bg-flamegraph'
-import {importFromFirefox} from './firefox'
-import {importSpeedscopeProfiles} from '../lib/file-format'
-import {importFromV8ProfLog} from './v8proflog'
-import {importFromLinuxPerf} from './linux-tools-perf'
-import {importFromHaskell} from './haskell'
-import {importFromSafari} from './safari'
-import {ProfileDataSource, TextProfileDataSource, MaybeCompressedDataReader} from './utils'
-import {importAsPprofProfile} from './pprof'
-import {decodeBase64} from '../lib/utils'
-import {importFromChromeHeapProfile} from './v8heapalloc'
-import {isTraceEventFormatted, importTraceEvents} from './trace-event'
-import {importFromCallgrind} from './callgrind'
-import {importFromPapyrus} from './papyrus'
+} from './chrome.js'
+import {importFromStackprof} from './stackprof.js'
+import {importFromInstrumentsDeepCopy, importFromInstrumentsTrace} from './instruments.js'
+import {importFromBGFlameGraph} from './bg-flamegraph.js'
+import {importFromFirefox} from './firefox.js'
+import {importSpeedscopeProfiles} from '../lib/file-format.js'
+import {importFromV8ProfLog} from './v8proflog.js'
+import {importFromLinuxPerf} from './linux-tools-perf.js'
+import {importFromHaskell} from './haskell.js'
+import {importFromSafari} from './safari.js'
+import {ProfileDataSource, TextProfileDataSource, MaybeCompressedDataReader} from './utils.js'
+import {importAsPprofProfile} from './pprof.js'
+import {decodeBase64} from '../lib/utils.js'
+import {importFromChromeHeapProfile} from './v8heapalloc.js'
+import {isTraceEventFormatted, importTraceEvents} from './trace-event.js'
+import {importFromCallgrind} from './callgrind.js'
+import {importFromPapyrus} from './papyrus.js'
 
 export async function importProfileGroupFromText(
   fileName: string,

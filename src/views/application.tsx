@@ -4,31 +4,31 @@ import '../../assets/source-code-pro.css'
 import {h} from 'preact'
 import {StyleSheet, css} from 'aphrodite'
 
-import {ProfileGroup, SymbolRemapper} from '../lib/profile'
-import {FontFamily, FontSize, Duration} from './style'
-import {importEmscriptenSymbolMap as importEmscriptenSymbolRemapper} from '../lib/emscripten'
-import {saveToFile} from '../lib/file-format'
-import {ActiveProfileState} from '../app-state/active-profile-state'
-import {LeftHeavyFlamechartView, ChronoFlamechartView} from './flamechart-view-container'
-import {CanvasContext} from '../gl/canvas-context'
-import {Toolbar} from './toolbar'
-import {importJavaScriptSourceMapSymbolRemapper} from '../lib/js-source-map'
-import {Theme, withTheme} from './themes/theme'
-import {ViewMode} from '../lib/view-mode'
-import {canUseXHR} from '../app-state'
-import {ProfileGroupState} from '../app-state/profile-group'
-import {HashParams} from '../lib/hash-params'
-import {StatelessComponent} from '../lib/preact-helpers'
-import {SandwichViewContainer} from './sandwich-view'
+import {ProfileGroup, SymbolRemapper} from '../lib/profile.js'
+import {FontFamily, FontSize, Duration} from './style.js'
+import {importEmscriptenSymbolMap as importEmscriptenSymbolRemapper} from '../lib/emscripten.js'
+import {saveToFile} from '../lib/file-format.js'
+import {ActiveProfileState} from '../app-state/active-profile-state.js'
+import {LeftHeavyFlamechartView, ChronoFlamechartView} from './flamechart-view-container.js'
+import {CanvasContext} from '../gl/canvas-context.js'
+import {Toolbar} from './toolbar.js'
+import {importJavaScriptSourceMapSymbolRemapper} from '../lib/js-source-map.js'
+import {Theme, withTheme} from './themes/theme.js'
+import {ViewMode} from '../lib/view-mode.js'
+import {canUseXHR} from '../app-state/index.js'
+import {ProfileGroupState} from '../app-state/profile-group.js'
+import {HashParams} from '../lib/hash-params.js'
+import {StatelessComponent} from '../lib/preact-helpers.js'
+import {SandwichViewContainer} from './sandwich-view.js'
 
-const importModule = import('../import')
+const importModule = import('../import/index.js')
 
 // Force eager loading of a few code-split modules.
 //
 // We put them all in one place so we can directly control the relative priority
 // of these.
 importModule.then(() => {})
-import('../lib/demangle').then(() => {})
+import('../lib/demangle/index.js').then(() => {})
 import('source-map').then(() => {})
 
 async function importProfilesFromText(

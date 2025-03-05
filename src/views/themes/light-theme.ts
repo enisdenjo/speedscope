@@ -1,6 +1,6 @@
-import {Color} from '../../lib/color'
-import {triangle} from '../../lib/utils'
-import {Theme} from './theme'
+import {Color} from '../../lib/color.js'
+import {triangle} from '../../lib/utils.js'
+import {Theme} from './theme.js'
 
 // These colors are intentionally not exported from this file, because these
 // colors are theme specific, and we want all color values to come from the

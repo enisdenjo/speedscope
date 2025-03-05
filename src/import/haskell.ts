@@ -1,5 +1,5 @@
-import {ProfileGroup, FrameInfo, CallTreeProfileBuilder} from '../lib/profile'
-import {TimeFormatter, ByteFormatter} from '../lib/value-formatters'
+import {ProfileGroup, FrameInfo, CallTreeProfileBuilder} from '../lib/profile.js'
+import {TimeFormatter, ByteFormatter} from '../lib/value-formatters.js'
 
 // See https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/profiling.html#json-profile-format
 // for information on the GHC profiler JSON output format.

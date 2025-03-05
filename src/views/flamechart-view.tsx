@@ -1,21 +1,21 @@
 import {h, Fragment} from 'preact'
 import {css} from 'aphrodite'
 
-import {CallTreeNode} from '../lib/profile'
+import {CallTreeNode} from '../lib/profile.js'
 
-import {Rect, Vec2, AffineTransform} from '../lib/math'
-import {formatPercent} from '../lib/utils'
-import {FlamechartMinimapView} from './flamechart-minimap-view'
+import {Rect, Vec2, AffineTransform} from '../lib/math.js'
+import {formatPercent} from '../lib/utils.js'
+import {FlamechartMinimapView} from './flamechart-minimap-view.js'
 
-import {Sizes, commonStyle} from './style'
-import {FlamechartDetailView} from './flamechart-detail-view'
-import {FlamechartPanZoomView} from './flamechart-pan-zoom-view'
-import {Hovertip} from './hovertip'
-import {FlamechartViewProps} from './flamechart-view-container'
-import {ProfileSearchContext} from './search-view'
-import {FlamechartSearchView} from './flamechart-search-view'
-import {getFlamechartStyle} from './flamechart-style'
-import {StatelessComponent} from '../lib/preact-helpers'
+import {Sizes, commonStyle} from './style.js'
+import {FlamechartDetailView} from './flamechart-detail-view.js'
+import {FlamechartPanZoomView} from './flamechart-pan-zoom-view.js'
+import {Hovertip} from './hovertip.js'
+import {FlamechartViewProps} from './flamechart-view-container.js'
+import {ProfileSearchContext} from './search-view.js'
+import {FlamechartSearchView} from './flamechart-search-view.js'
+import {getFlamechartStyle} from './flamechart-style.js'
+import {StatelessComponent} from '../lib/preact-helpers.js'
 
 export class FlamechartView extends StatelessComponent<FlamechartViewProps> {
   private getStyle() {

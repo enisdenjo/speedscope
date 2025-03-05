@@ -1,6 +1,6 @@
-import {importEmscriptenSymbolMap} from './emscripten'
-import {Frame} from './profile'
-import {KeyedSet} from './utils'
+import {importEmscriptenSymbolMap} from './emscripten.js'
+import {Frame} from './profile.js'
+import {KeyedSet} from './utils.js'
 
 test('importEmscriptenSymbolMap', () => {
   function checkMap(input: string, expectedMapping: [string, string][]) {

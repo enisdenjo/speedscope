@@ -1,1 +1,1 @@
-export {loadDemangling} from './demangle'
+export {loadDemangling} from './demangle.js'

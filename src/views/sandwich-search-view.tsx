@@ -1,8 +1,8 @@
 import {memo} from 'preact/compat'
 import {useContext, useMemo} from 'preact/hooks'
-import {SearchView} from './search-view'
+import {SearchView} from './search-view.js'
 import {h} from 'preact'
-import {SandwichViewContext} from './sandwich-view'
+import {SandwichViewContext} from './sandwich-view.js'
 
 export const SandwichSearchView = memo(() => {
   const sandwichViewContext = useContext(SandwichViewContext)

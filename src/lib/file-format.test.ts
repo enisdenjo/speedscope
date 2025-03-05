@@ -1,4 +1,4 @@
-import {checkProfileSnapshot, expectImportFailure} from './test-utils'
+import {checkProfileSnapshot, expectImportFailure} from './test-utils.js'
 
 describe('importSpeedscopeProfiles', () => {
   test('0.0.1 evented profile', async () => {

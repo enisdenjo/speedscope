@@ -1,6 +1,6 @@
-import {Vec2, Rect, AffineTransform} from '../lib/math'
-import {Graphics} from './graphics'
-import {setUniformAffineTransform} from './utils'
+import {Vec2, Rect, AffineTransform} from '../lib/math.js'
+import {Graphics} from './graphics.js'
+import {setUniformAffineTransform} from './utils.js'
 
 export interface TextureRendererProps {
   texture: Graphics.Texture

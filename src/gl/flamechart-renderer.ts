@@ -1,12 +1,12 @@
-import {Flamechart} from '../lib/flamechart'
-import {RectangleBatch, RectangleBatchRenderer} from './rectangle-batch-renderer'
-import {Vec2, Rect, AffineTransform} from '../lib/math'
-import {Color} from '../lib/color'
-import {KeyedSet} from '../lib/utils'
-import {RowAtlas} from './row-atlas'
-import {Graphics} from './graphics'
-import {FlamechartColorPassRenderer} from './flamechart-color-pass-renderer'
-import {renderInto} from './utils'
+import {Flamechart} from '../lib/flamechart.js'
+import {RectangleBatch, RectangleBatchRenderer} from './rectangle-batch-renderer.js'
+import {Vec2, Rect, AffineTransform} from '../lib/math.js'
+import {Color} from '../lib/color.js'
+import {KeyedSet} from '../lib/utils.js'
+import {RowAtlas} from './row-atlas.js'
+import {Graphics} from './graphics.js'
+import {FlamechartColorPassRenderer} from './flamechart-color-pass-renderer.js'
+import {renderInto} from './utils.js'
 
 const MAX_BATCH_SIZE = 10000
 

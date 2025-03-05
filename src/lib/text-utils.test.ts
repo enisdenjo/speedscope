@@ -1,5 +1,5 @@
-import {buildTrimmedText, ELLIPSIS, remapRangesToTrimmedText} from './text-utils'
-import {fuzzyMatchStrings} from './fuzzy-find'
+import {buildTrimmedText, ELLIPSIS, remapRangesToTrimmedText} from './text-utils.js'
+import {fuzzyMatchStrings} from './fuzzy-find.js'
 
 function assertTrimmed(text: string, length: number, expectedTrimmed: string) {
   expect(buildTrimmedText(text, length).trimmedString).toEqual(

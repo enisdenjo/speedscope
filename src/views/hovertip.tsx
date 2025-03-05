@@ -1,8 +1,8 @@
-import {Vec2} from '../lib/math'
-import {Sizes, FontSize, FontFamily, ZIndex} from './style'
+import {Vec2} from '../lib/math.js'
+import {Sizes, FontSize, FontFamily, ZIndex} from './style.js'
 import {css, StyleSheet} from 'aphrodite'
 import {ComponentChildren, h} from 'preact'
-import {useTheme, withTheme} from './themes/theme'
+import {useTheme, withTheme} from './themes/theme.js'
 import {useCallback} from 'preact/hooks'
 
 interface HovertipProps {

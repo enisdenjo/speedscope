@@ -4,7 +4,7 @@ import {
   CallTreeNode,
   CallTreeProfileBuilder,
   Profile,
-} from './profile'
+} from './profile.js'
 
 function getFrameInfo(key: string): FrameInfo {
   return {

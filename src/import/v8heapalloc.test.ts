@@ -1,4 +1,4 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importV8HeapAlloc from Chrome', async () => {
   await checkProfileSnapshot('./sample/profiles/Chrome/69/Heap-20181005T144546.heapprofile')

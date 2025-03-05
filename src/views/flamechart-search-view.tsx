@@ -1,15 +1,15 @@
 import {memo} from 'preact/compat'
 import {useContext, useMemo, useCallback} from 'preact/hooks'
-import {SearchView, ProfileSearchContext} from './search-view'
+import {SearchView, ProfileSearchContext} from './search-view.js'
 import {
   FlamechartSearchMatch,
   FlamechartSearchResults,
   ProfileSearchResults,
-} from '../lib/profile-search'
-import {Rect, Vec2} from '../lib/math'
+} from '../lib/profile-search.js'
+import {Rect, Vec2} from '../lib/math.js'
 import {h, createContext, ComponentChildren} from 'preact'
-import {Flamechart} from '../lib/flamechart'
-import {CallTreeNode} from '../lib/profile'
+import {Flamechart} from '../lib/flamechart.js'
+import {CallTreeNode} from '../lib/profile.js'
 
 export const FlamechartSearchContext = createContext<FlamechartSearchData | null>(null)
 

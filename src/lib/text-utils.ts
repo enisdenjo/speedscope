@@ -1,4 +1,4 @@
-import {findValueBisect} from './utils'
+import {findValueBisect} from './utils.js'
 
 export const ELLIPSIS = '\u2026'
 

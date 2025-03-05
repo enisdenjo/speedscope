@@ -1,7 +1,7 @@
-import {Profile, FrameInfo, CallTreeProfileBuilder, ProfileGroup} from '../lib/profile'
-import {getOrInsert, lastOf, sortBy, itForEach} from '../lib/utils'
-import {TimeFormatter} from '../lib/value-formatters'
-import {chromeTreeToNodes, OldCPUProfile} from './v8cpuFormatter'
+import {Profile, FrameInfo, CallTreeProfileBuilder, ProfileGroup} from '../lib/profile.js'
+import {getOrInsert, lastOf, sortBy, itForEach} from '../lib/utils.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
+import {chromeTreeToNodes, OldCPUProfile} from './v8cpuFormatter.js'
 
 // See: https://github.com/v8/v8/blob/master/src/inspector/js_protocol.json
 

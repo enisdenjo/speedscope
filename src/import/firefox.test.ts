@@ -1,4 +1,4 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importFromFirefox', async () => {
   await checkProfileSnapshot('./sample/profiles/Firefox/59/simple-firefox.json')

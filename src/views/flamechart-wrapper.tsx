@@ -1,14 +1,14 @@
-import {CallTreeNode} from '../lib/profile'
+import {CallTreeNode} from '../lib/profile.js'
 import {StyleSheet, css} from 'aphrodite'
 import {h} from 'preact'
-import {commonStyle} from './style'
-import {Rect, AffineTransform, Vec2} from '../lib/math'
-import {FlamechartPanZoomView} from './flamechart-pan-zoom-view'
-import {noop, formatPercent} from '../lib/utils'
-import {Hovertip} from './hovertip'
-import {FlamechartViewProps} from './flamechart-view-container'
-import {withTheme} from './themes/theme'
-import {StatelessComponent} from '../lib/preact-helpers'
+import {commonStyle} from './style.js'
+import {Rect, AffineTransform, Vec2} from '../lib/math.js'
+import {FlamechartPanZoomView} from './flamechart-pan-zoom-view.js'
+import {noop, formatPercent} from '../lib/utils.js'
+import {Hovertip} from './hovertip.js'
+import {FlamechartViewProps} from './flamechart-view-container.js'
+import {withTheme} from './themes/theme.js'
+import {StatelessComponent} from '../lib/preact-helpers.js'
 
 export class FlamechartWrapper extends StatelessComponent<FlamechartViewProps> {
   private clampViewportToFlamegraph(viewportRect: Rect) {

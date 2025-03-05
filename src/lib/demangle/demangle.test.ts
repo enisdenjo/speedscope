@@ -1,4 +1,4 @@
-import {loadDemangling} from './demangle'
+import {loadDemangling} from './demangle.js'
 
 test('demangle', async () => {
   const demangle = await loadDemangling()

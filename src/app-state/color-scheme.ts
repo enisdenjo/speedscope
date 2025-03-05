@@ -1,4 +1,4 @@
-import {Atom} from '../lib/atom'
+import {Atom} from '../lib/atom.js'
 
 export const enum ColorScheme {
   // Default: respect prefers-color-schema

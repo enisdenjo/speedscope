@@ -1,4 +1,4 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importFromCallgrind', async () => {
   await checkProfileSnapshot('./sample/profiles/callgrind/callgrind.example.log')

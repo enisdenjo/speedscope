@@ -1,8 +1,8 @@
 import {h} from 'preact'
-import {getCanvasContext} from '../app-state/getters'
+import {getCanvasContext} from '../app-state/getters.js'
 import {memo, useMemo} from 'preact/compat'
-import {useActiveProfileState} from '../app-state/active-profile-state'
-import {useTheme} from './themes/theme'
+import {useActiveProfileState} from '../app-state/active-profile-state.js'
+import {useTheme} from './themes/theme.js'
 import {
   dragActiveAtom,
   errorAtom,
@@ -12,10 +12,10 @@ import {
   loadingAtom,
   profileGroupAtom,
   viewModeAtom,
-} from '../app-state'
-import {useAtom} from '../lib/atom'
-import {ProfileSearchContextProvider} from './search-view'
-import {Application} from './application'
+} from '../app-state/index.js'
+import {useAtom} from '../lib/atom.js'
+import {ProfileSearchContextProvider} from './search-view.js'
+import {Application} from './application.js'
 
 export const ApplicationContainer = memo(() => {
   const canvas = useAtom(glCanvasAtom)

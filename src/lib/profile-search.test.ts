@@ -1,4 +1,4 @@
-import {exactMatchStrings} from './profile-search'
+import {exactMatchStrings} from './profile-search.js'
 
 function assertMatch(text: string, pattern: string, expected: string) {
   const match = exactMatchStrings(text, pattern)

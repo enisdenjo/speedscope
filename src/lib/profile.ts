@@ -1,6 +1,6 @@
-import {lastOf, KeyedSet} from './utils'
-import {ValueFormatter, RawValueFormatter} from './value-formatters'
-import {FileFormat} from './file-format-spec'
+import {lastOf, KeyedSet} from './utils.js'
+import {ValueFormatter, RawValueFormatter} from './value-formatters.js'
+import {FileFormat} from './file-format-spec.js'
 
 export interface FrameInfo {
   key: string | number
@@ -413,7 +413,7 @@ export class Profile {
         frame.name.startsWith('_Z')
       ) {
         if (!demangle) {
-          const demangleModule = await import('./demangle')
+          const demangleModule = await import('./demangle/index.js')
           demangle = await demangleModule.loadDemangling()
         }
         frame.name = demangle(frame.name)

@@ -85,10 +85,10 @@
 // strat;backup;write, even though that never happened in the real program
 // execution.
 
-import {CallTreeProfileBuilder, Frame, FrameInfo, Profile, ProfileGroup} from '../lib/profile'
-import {getOrElse, getOrInsert, KeyedSet} from '../lib/utils'
-import {ByteFormatter, TimeFormatter} from '../lib/value-formatters'
-import {TextFileContent} from './utils'
+import {CallTreeProfileBuilder, Frame, FrameInfo, Profile, ProfileGroup} from '../lib/profile.js'
+import {getOrElse, getOrInsert, KeyedSet} from '../lib/utils.js'
+import {ByteFormatter, TimeFormatter} from '../lib/value-formatters.js'
+import {TextFileContent} from './utils.js'
 
 class CallGraph {
   private frameSet = new KeyedSet<Frame>()

@@ -1,4 +1,4 @@
-import {clamp, Vec2, AffineTransform, Rect} from './math'
+import {clamp, Vec2, AffineTransform, Rect} from './math.js'
 import * as jsc from 'jsverify'
 
 test('clamp', () => {

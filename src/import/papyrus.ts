@@ -22,10 +22,10 @@
 // the "Quest" script, and thus it has certain methods, like "CompleteQuest()". This information would be useful
 // for Debugging, but for profiling, it would hinder meaningful output in left heavy mode.
 
-import {CallTreeProfileBuilder, Frame, Profile} from '../lib/profile'
-import {KeyedSet, lastOf} from '../lib/utils'
-import {TimeFormatter} from '../lib/value-formatters'
-import {TextFileContent} from './utils'
+import {CallTreeProfileBuilder, Frame, Profile} from '../lib/profile.js'
+import {KeyedSet, lastOf} from '../lib/utils.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
+import {TextFileContent} from './utils.js'
 
 type ParsedLine = {
   at: number

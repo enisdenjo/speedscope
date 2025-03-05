@@ -1,24 +1,24 @@
-import {memoizeByShallowEquality, noop} from '../lib/utils'
-import {Profile, Frame} from '../lib/profile'
-import {Flamechart} from '../lib/flamechart'
+import {memoizeByShallowEquality, noop} from '../lib/utils.js'
+import {Profile, Frame} from '../lib/profile.js'
+import {Flamechart} from '../lib/flamechart.js'
 import {
   createMemoizedFlamechartRenderer,
   FlamechartViewContainerProps,
   useFlamechartSetters,
-} from './flamechart-view-container'
+} from './flamechart-view-container.js'
 import {
   getCanvasContext,
   createGetColorBucketForFrame,
   createGetCSSColorForFrame,
   getFrameToColorBucket,
-} from '../app-state/getters'
-import {FlamechartWrapper} from './flamechart-wrapper'
+} from '../app-state/getters.js'
+import {FlamechartWrapper} from './flamechart-wrapper.js'
 import {h} from 'preact'
 import {memo} from 'preact/compat'
-import {useTheme} from './themes/theme'
-import {FlamechartID} from '../app-state/profile-group'
-import {flattenRecursionAtom, glCanvasAtom} from '../app-state'
-import {useAtom} from '../lib/atom'
+import {useTheme} from './themes/theme.js'
+import {FlamechartID} from '../app-state/profile-group.js'
+import {flattenRecursionAtom, glCanvasAtom} from '../app-state/index.js'
+import {useAtom} from '../lib/atom.js'
 
 const getInvertedCallerProfile = memoizeByShallowEquality(
   ({

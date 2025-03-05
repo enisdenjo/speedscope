@@ -1,24 +1,24 @@
 import {h} from 'preact'
-import {CanvasContext} from '../gl/canvas-context'
-import {Flamechart} from '../lib/flamechart'
-import {FlamechartRenderer, FlamechartRendererOptions} from '../gl/flamechart-renderer'
-import {Frame, Profile, CallTreeNode} from '../lib/profile'
-import {memoizeByShallowEquality} from '../lib/utils'
-import {FlamechartView} from './flamechart-view'
+import {CanvasContext} from '../gl/canvas-context.js'
+import {Flamechart} from '../lib/flamechart.js'
+import {FlamechartRenderer, FlamechartRendererOptions} from '../gl/flamechart-renderer.js'
+import {Frame, Profile, CallTreeNode} from '../lib/profile.js'
+import {memoizeByShallowEquality} from '../lib/utils.js'
+import {FlamechartView} from './flamechart-view.js'
 import {
   getRowAtlas,
   createGetColorBucketForFrame,
   getCanvasContext,
   createGetCSSColorForFrame,
   getFrameToColorBucket,
-} from '../app-state/getters'
-import {Vec2, Rect} from '../lib/math'
+} from '../app-state/getters.js'
+import {Vec2, Rect} from '../lib/math.js'
 import {memo, useCallback} from 'preact/compat'
-import {ActiveProfileState} from '../app-state/active-profile-state'
-import {FlamechartSearchContextProvider} from './flamechart-search-view'
-import {Theme, useTheme} from './themes/theme'
-import {FlamechartID, FlamechartViewState} from '../app-state/profile-group'
-import {profileGroupAtom} from '../app-state'
+import {ActiveProfileState} from '../app-state/active-profile-state.js'
+import {FlamechartSearchContextProvider} from './flamechart-search-view.js'
+import {Theme, useTheme} from './themes/theme.js'
+import {FlamechartID, FlamechartViewState} from '../app-state/profile-group.js'
+import {profileGroupAtom} from '../app-state/index.js'
 
 interface FlamechartSetters {
   setLogicalSpaceViewportSize: (logicalSpaceViewportSize: Vec2) => void

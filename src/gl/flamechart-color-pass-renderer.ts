@@ -1,7 +1,7 @@
-import {Vec2, Rect, AffineTransform} from '../lib/math'
-import {Theme} from '../views/themes/theme'
-import {Graphics} from './graphics'
-import {setUniformAffineTransform} from './utils'
+import {Vec2, Rect, AffineTransform} from '../lib/math.js'
+import {Theme} from '../views/themes/theme.js'
+import {Graphics} from './graphics.js'
+import {setUniformAffineTransform} from './utils.js'
 
 const vertexFormat = new Graphics.VertexFormat()
 vertexFormat.add('position', Graphics.AttributeType.FLOAT, 2)

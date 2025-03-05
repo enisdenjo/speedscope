@@ -1,5 +1,5 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
-import {withMockedFileChunkSizeForTests} from './utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
+import {withMockedFileChunkSizeForTests} from './utils.js'
 
 test('importFromChromeCPUProfile', async () => {
   await checkProfileSnapshot('./sample/profiles/Chrome/65/simple.cpuprofile')

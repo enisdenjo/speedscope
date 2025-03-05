@@ -1,7 +1,7 @@
 // https://github.com/brendangregg/FlameGraph#2-fold-stacks
 
-import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile'
-import {TextFileContent} from './utils'
+import {Profile, FrameInfo, StackListProfileBuilder} from '../lib/profile.js'
+import {TextFileContent} from './utils.js'
 
 interface BGSample {
   stack: FrameInfo[]

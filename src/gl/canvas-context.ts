@@ -1,11 +1,11 @@
-import {Graphics, WebGL} from './graphics'
-import {RectangleBatchRenderer} from './rectangle-batch-renderer'
-import {TextureRenderer} from './texture-renderer'
-import {Rect, Vec2} from '../lib/math'
-import {ViewportRectangleRenderer} from './overlay-rectangle-renderer'
-import {FlamechartColorPassRenderer} from './flamechart-color-pass-renderer'
-import {Color} from '../lib/color'
-import {Theme} from '../views/themes/theme'
+import {Graphics, WebGL} from './graphics.js'
+import {RectangleBatchRenderer} from './rectangle-batch-renderer.js'
+import {TextureRenderer} from './texture-renderer.js'
+import {Rect, Vec2} from '../lib/math.js'
+import {ViewportRectangleRenderer} from './overlay-rectangle-renderer.js'
+import {FlamechartColorPassRenderer} from './flamechart-color-pass-renderer.js'
+import {Color} from '../lib/color.js'
+import {Theme} from '../views/themes/theme.js'
 
 type FrameCallback = () => void
 

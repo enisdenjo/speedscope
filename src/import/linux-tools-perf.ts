@@ -1,7 +1,7 @@
-import {StackListProfileBuilder, ProfileGroup} from '../lib/profile'
-import {itMap, getOrInsert} from '../lib/utils'
-import {TimeFormatter} from '../lib/value-formatters'
-import {TextFileContent} from './utils'
+import {StackListProfileBuilder, ProfileGroup} from '../lib/profile.js'
+import {itMap, getOrInsert} from '../lib/utils.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
+import {TextFileContent} from './utils.js'
 
 // This imports the output of the "perf script" command on linux.
 //

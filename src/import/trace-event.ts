@@ -1,12 +1,12 @@
-import {sortBy, zeroPad, getOrInsert, lastOf} from '../lib/utils'
+import {sortBy, zeroPad, getOrInsert, lastOf} from '../lib/utils.js'
 import {
   ProfileGroup,
   CallTreeProfileBuilder,
   FrameInfo,
   Profile,
   StackListProfileBuilder,
-} from '../lib/profile'
-import {TimeFormatter} from '../lib/value-formatters'
+} from '../lib/profile.js'
+import {TimeFormatter} from '../lib/value-formatters.js'
 
 // This file concerns import from the "Trace Event Format", authored by Google
 // and used for Google's own chrome://trace.

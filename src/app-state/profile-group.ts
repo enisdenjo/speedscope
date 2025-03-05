@@ -1,7 +1,7 @@
-import {Atom} from '../lib/atom'
-import {clamp, Rect, Vec2} from '../lib/math'
-import {CallTreeNode, Frame, Profile, ProfileGroup} from '../lib/profile'
-import {objectsHaveShallowEquality} from '../lib/utils'
+import {Atom} from '../lib/atom.js'
+import {clamp, Rect, Vec2} from '../lib/math.js'
+import {CallTreeNode, Frame, Profile, ProfileGroup} from '../lib/profile.js'
+import {objectsHaveShallowEquality} from '../lib/utils.js'
 
 export interface FlamechartViewState {
   hover: {

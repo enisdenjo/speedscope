@@ -1,4 +1,4 @@
-import {importProfileGroupFromText} from '.'
+import {importProfileGroupFromText} from './index.js'
 
 test('importProfileGroup', async () => {
   // Importing garbage should return null

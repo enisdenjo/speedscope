@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild'
-import {buildOptions, generateIndexHtml} from './esbuild-shared'
+import {buildOptions, generateIndexHtml} from './esbuild-shared.js'
 
 function parseArgs() {
   const args = process.argv.slice(2)

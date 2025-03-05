@@ -1,4 +1,4 @@
-import {checkProfileSnapshot} from '../lib/test-utils'
+import {checkProfileSnapshot} from '../lib/test-utils.js'
 
 test('importFromPapyrus script profile', async () => {
   await checkProfileSnapshot('./sample/profiles/papyrus/script.log')

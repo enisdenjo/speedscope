@@ -7,10 +7,10 @@ import {
   CallTreeProfileBuilder,
   StackListProfileBuilder,
   ProfileGroup,
-} from '../lib/profile'
-import {sortBy, getOrThrow, getOrInsert, lastOf, getOrElse, zeroPad} from '../lib/utils'
-import {ByteFormatter, TimeFormatter} from '../lib/value-formatters'
-import {MaybeCompressedDataReader, TextFileContent} from './utils'
+} from '../lib/profile.js'
+import {sortBy, getOrThrow, getOrInsert, lastOf, getOrElse, zeroPad} from '../lib/utils.js'
+import {ByteFormatter, TimeFormatter} from '../lib/value-formatters.js'
+import {MaybeCompressedDataReader, TextFileContent} from './utils.js'
 
 function parseTSV<T>(contents: TextFileContent): T[] {
   const lines = [...contents.splitLines()].map(l => l.split('\t'))

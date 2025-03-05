@@ -1,4 +1,4 @@
-import {Atom} from './atom'
+import {Atom} from './atom.js'
 
 describe('Atom', () => {
   test('basic get/set', () => {

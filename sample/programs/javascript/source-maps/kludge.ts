@@ -1,4 +1,4 @@
-import {alpha} from './alpha'
+import {alpha} from './alpha.js'
 
 export class Kludge {
   constructor() {

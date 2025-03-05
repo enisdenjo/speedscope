@@ -1,7 +1,7 @@
-import {Rect, Vec2, AffineTransform} from '../lib/math'
-import {Color} from '../lib/color'
-import {Graphics} from './graphics'
-import {setUniformAffineTransform} from './utils'
+import {Rect, Vec2, AffineTransform} from '../lib/math.js'
+import {Color} from '../lib/color.js'
+import {Graphics} from './graphics.js'
+import {setUniformAffineTransform} from './utils.js'
 
 const vertexFormat = new Graphics.VertexFormat()
 vertexFormat.add('configSpacePos', Graphics.AttributeType.FLOAT, 2)

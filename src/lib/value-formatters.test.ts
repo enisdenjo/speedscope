@@ -1,4 +1,4 @@
-import {TimeFormatter, ByteFormatter} from './value-formatters'
+import {TimeFormatter, ByteFormatter} from './value-formatters.js'
 
 describe('TimeFormatter', () => {
   test('input units milliseconds', () => {

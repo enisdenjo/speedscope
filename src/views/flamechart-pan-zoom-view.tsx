@@ -1,22 +1,22 @@
-import {Rect, AffineTransform, Vec2, clamp} from '../lib/math'
-import {CallTreeNode} from '../lib/profile'
-import {Flamechart, FlamechartFrame} from '../lib/flamechart'
-import {CanvasContext} from '../gl/canvas-context'
-import {FlamechartRenderer} from '../gl/flamechart-renderer'
-import {Sizes, FontSize, FontFamily, commonStyle} from './style'
+import {Rect, AffineTransform, Vec2, clamp} from '../lib/math.js'
+import {CallTreeNode} from '../lib/profile.js'
+import {Flamechart, FlamechartFrame} from '../lib/flamechart.js'
+import {CanvasContext} from '../gl/canvas-context.js'
+import {FlamechartRenderer} from '../gl/flamechart-renderer.js'
+import {Sizes, FontSize, FontFamily, commonStyle} from './style.js'
 import {
   cachedMeasureTextWidth,
   ELLIPSIS,
   trimTextMid,
   remapRangesToTrimmedText,
-} from '../lib/text-utils'
-import {getFlamechartStyle} from './flamechart-style'
+} from '../lib/text-utils.js'
+import {getFlamechartStyle} from './flamechart-style.js'
 import {h, Component} from 'preact'
 import {css} from 'aphrodite'
-import {ProfileSearchResults} from '../lib/profile-search'
-import {BatchCanvasTextRenderer, BatchCanvasRectRenderer} from '../lib/canvas-2d-batch-renderers'
-import {Color} from '../lib/color'
-import {Theme} from './themes/theme'
+import {ProfileSearchResults} from '../lib/profile-search.js'
+import {BatchCanvasTextRenderer, BatchCanvasRectRenderer} from '../lib/canvas-2d-batch-renderers.js'
+import {Color} from '../lib/color.js'
+import {Theme} from './themes/theme.js'
 
 interface FlamechartFrameLabel {
   configSpaceBounds: Rect
