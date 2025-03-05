@@ -1,6 +1,10 @@
-import createWasmDemangleModule from './demangle.wasm'
+// @ts-expect-error
+import createWasmDemangleModule from './demangle.wasm.cjs'
 
-const wasmDemangleModulePromise = createWasmDemangleModule().then(module => module)
+const wasmDemangleModulePromise = createWasmDemangleModule().then(
+  // @ts-expect-error
+  module => module,
+)
 
 const cache = new Map<string, string>()
 

@@ -1,4 +1,5 @@
-import {perftools} from './profile.proto.js'
+// @ts-expect-error
+import {perftools} from './profile.proto.cjs'
 import {FrameInfo, StackListProfileBuilder, Profile} from '../lib/profile'
 import {lastOf} from '../lib/utils'
 import {TimeFormatter, ByteFormatter} from '../lib/value-formatters'
@@ -21,7 +22,10 @@ function getSampleTypeIndex(profile: perftools.profiles.Profile): number {
     return fallback
   }
 
-  const idx = sampleTypes.findIndex(e => e.type === dflt)
+  const idx = sampleTypes.findIndex(
+    // @ts-expect-error
+    e => e.type === dflt,
+  )
   if (idx === -1) {
     return fallback
   }
@@ -100,8 +104,17 @@ export function importAsPprofProfile(rawProfile: ArrayBuffer): Profile | null {
     const lastLine = lastOf(line)
     if (lastLine == null) return null
 
-    if (lastLine.functionId) {
-      let funcFrame = frameInfoByFunctionID.get(i32(lastLine.functionId))
+    if (
+      // @ts-expect-error
+      lastLine.functionId
+    ) {
+      let funcFrame = frameInfoByFunctionID.get(
+        i32(
+          // @ts-expect-error
+          lastLine.functionId,
+        ),
+      )
+      // @ts-expect-error
       const line = lastLine.line instanceof Long ? lastLine.line.toNumber() : lastLine.line
       if (line && line > 0 && funcFrame != null) {
         funcFrame.line = line
@@ -123,10 +136,13 @@ export function importAsPprofProfile(rawProfile: ArrayBuffer): Profile | null {
     }
   }
 
-  const sampleTypes: SampleType[] = protoProfile.sampleType.map(type => ({
-    type: (type.type && stringVal(type.type)) || 'samples',
-    unit: (type.unit && stringVal(type.unit)) || 'count',
-  }))
+  const sampleTypes: SampleType[] = protoProfile.sampleType.map(
+    // @ts-expect-error
+    type => ({
+      type: (type.type && stringVal(type.type)) || 'samples',
+      unit: (type.unit && stringVal(type.unit)) || 'count',
+    }),
+  )
 
   const sampleTypeIndex = getSampleTypeIndex(protoProfile)
 
@@ -152,7 +168,12 @@ export function importAsPprofProfile(rawProfile: ArrayBuffer): Profile | null {
   }
 
   for (let s of protoProfile.sample) {
-    const stack = s.locationId ? s.locationId.map(l => frameByLocationID.get(i32(l))) : []
+    const stack = s.locationId
+      ? s.locationId.map(
+          // @ts-expect-error
+          l => frameByLocationID.get(i32(l)),
+        )
+      : []
     stack.reverse()
 
     if (s.value == null || s.value.length <= sampleTypeIndex) {
@@ -160,7 +181,13 @@ export function importAsPprofProfile(rawProfile: ArrayBuffer): Profile | null {
     }
 
     const value = s.value[sampleTypeIndex]
-    profileBuilder.appendSampleWithWeight(stack.filter(f => f != null) as FrameInfo[], +value)
+    profileBuilder.appendSampleWithWeight(
+      stack.filter(
+        // @ts-expect-error
+        f => f != null,
+      ) as FrameInfo[],
+      +value,
+    )
   }
 
   return profileBuilder.build()

@@ -1,15 +1,23 @@
 {
+  "type": "module",
   "name": "speedscope",
-  "version": "1.22.2",
+  "version": "1.23.0-alpha.1",
   "description": "",
   "repository": "jlfwong/speedscope",
-  "main": "index.js",
+  "main": "./dist/lib/src/import/index.js",
   "bin": {
     "speedscope": "./bin/cli.mjs"
   },
+  "exports": {
+    "./package.json": "./package.json",
+    "./import/v8heapalloc": {
+      "types": "./dist/lib/src/import/v8heapalloc.d.ts",
+      "default": "./dist/lib/src/import/v8heapalloc.js"
+    }
+  },
   "scripts": {
     "deploy": "./scripts/deploy.sh",
-    "prepack": "./scripts/prepack.sh --outdir \"$(pwd)/dist/release\" --protocol file",
+    "prepack": "./scripts/prepack.sh --outdir \"$(pwd)/dist/release\" --protocol file && tsc -b",
     "prettier": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'",
     "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx'",
     "jest": "./scripts/test-setup.sh && jest --runInBand",
@@ -20,6 +28,7 @@
   },
   "files": [
     "bin/cli.mjs",
+    "dist/lib/**",
     "dist/release/**",
     "!*.map"
   ],

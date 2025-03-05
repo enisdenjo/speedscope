@@ -44,7 +44,7 @@ date >> "$OUTDIR"/release.txt
 git rev-parse HEAD >> "$OUTDIR"/release.txt
 
 # Place a json schema for the file format into the build directory too
-node scripts/generate-file-format-schema-json.js > "$OUTDIR"/file-format-schema.json
+node scripts/generate-file-format-schema-json.cjs > "$OUTDIR"/file-format-schema.json
 
 # Include licenses
 # https://github.com/jlfwong/speedscope/pull/412
