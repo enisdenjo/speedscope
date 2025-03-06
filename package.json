@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "speedscope",
-  "version": "1.23.0-alpha.3",
+  "version": "1.23.0-alpha.4",
   "description": "",
   "repository": "jlfwong/speedscope",
   "main": "./dist/lib/src/import/index.js",

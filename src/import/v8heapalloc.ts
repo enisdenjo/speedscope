@@ -57,7 +57,7 @@ export function importFromChromeHeapProfile(chromeProfile: HeapProfile): Profile
   const nodeById = new Map<number, HeapProfileNode>()
   let currentId = 0
   const computeId = (node: HeapProfileNode, parent?: HeapProfileNode) => {
-    node.id = currentId++
+    node.id ||= currentId++
     nodeById.set(node.id, node)
     if (parent) {
       node.parent = parent.id
